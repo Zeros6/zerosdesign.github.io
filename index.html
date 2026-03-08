@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Suman Ghosh - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- SimpleLightbox CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Logo styling */
+			.logo {
+				width: 5.5rem;
+				height: 5.5rem;
+				border: solid 1px #ffffff;
+				border-radius: 100%;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.logo-img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			/* Intro image - half visible, blended */
+			#Home .image.main {
+				max-height: 200px;
+				overflow: hidden;
+			}
+			#Home .image.main img {
+				width: 100%;
+				height: auto;
+				margin-right: -100px;
+			}
+			/* Gallery styling */
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+				gap: 10px;
+				margin: 2rem 0;
+			}
+			.gallery a {
+				border: none;
+				display: block;
+				border-radius: 4px;
+				overflow: hidden;
+			}
+			.gallery a:hover {
+				border-bottom: none;
+			}
+			.gallery img {
+				width: 100%;
+				height: 150px;
+				object-fit: cover;
+				display: block;
+				transition: transform 0.3s ease;
+			}
+			.gallery a:hover img {
+				transform: scale(1.05);
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<img src="images/logo.png" alt="Logo" class="logo-img" />
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Suman Ghosh</h1>
+								<p>Freelance Web Developer & Graphic Designer</p>
+								<p>I design responsive websites and promotional graphics that help brands stand out and connect with customers online.</p>
+
+								<ul class="actions special">
+								<li><a href="#contact" class="button primary">Start a Project</a></li>
+								<li><a href="#work" class="button">View My Work</a></li>
+								</ul>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#Home">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#contact">Contact</a></li>
+								
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Home -->
+							<article id="Home">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.png" alt="website design" /></span>
+								<p>Hello! I'm <strong>Suman Ghosh</strong>, a freelance website developer and graphic designer passionate about creating modern and effective digital experiences.</p>
+								<p>I build responsive websites and design promotional graphics that help businesses attract customers and present their services professionally online.</p>
+								<p>My services include website development, poster design, and visual branding for small businesses, photographers, and professionals.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">My Projects</h2>
+								<p>Here are some of my recent designing projects. Click on any image to view it in a lightbox.</p>
+								<div class="gallery">
+									<a href="images/Work images/pic (1).jpg" title="Design Project 1"><img src="images/Work images/pic (1).jpg" alt="Project 1" /></a>
+									<a href="images/Work images/pic (1).png" title="Design Project 2"><img src="images/Work images/pic (1).png" alt="Project 2" /></a>
+									<a href="images/Work images/pic (2).png" title="Design Project 3"><img src="images/Work images/pic (2).png" alt="Project 3" /></a>
+									<a href="images/Work images/pic (3).png" title="Design Project 4"><img src="images/Work images/pic (3).png" alt="Project 4" /></a>
+								</div>
+								<p>I have also developed several websites for clients. However, due to client privacy and project confidentiality, I cannot publicly display those works here.</p>
+							</article>
+
+						<!-- services -->
+							<article id="services">
+								<h2 class="major">Services</h2>
+
+								<p>I offer a range of creative and technical services to help businesses build a strong online presence.</p>
+
+								<h3>Website Development</h3>
+								<p>Modern, responsive websites designed to work smoothly on desktop, tablet, and mobile devices.</p>
+
+								<h3>Poster & Graphic Design</h3>
+								<p>Creative promotional posters, social media graphics, and marketing materials designed to attract attention.</p>
+
+								<h3>Website Maintenance</h3>
+								<p>Website updates, improvements, and support to keep your site running smoothly.</p>
+							</article>
+
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form action="https://formspree.io/f/mjgakqyv" method="POST">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+								<ul class="actions special">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2026 Suman Ghosh | Website Development & Graphic Design</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- SimpleLightbox JS -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+			<script>
+				// Initialize SimpleLightbox for gallery
+				$(document).ready(function() {
+					$('.gallery a').simpleLightbox();
+				});
+			</script>
+
+	</body>
+</html>
+
